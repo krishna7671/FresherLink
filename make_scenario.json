@@ -1,0 +1,57 @@
+{
+  "name": "FresherLink AI Matching Automation",
+  "version": 1,
+  "modules": [
+    {
+      "id": 1,
+      "name": "Watch New Gig",
+      "type": "google-sheets.watch-rows",
+      "parameters": {
+        "spreadsheet_id": "YOUR_SPREADSHEET_ID",
+        "sheet_name": "Gigs",
+        "limit": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "Get Freelancer Data",
+      "type": "google-sheets.get-rows",
+      "parameters": {
+        "spreadsheet_id": "YOUR_SPREADSHEET_ID",
+        "sheet_name": "Freelancers"
+      }
+    },
+    {
+      "id": 3,
+      "name": "AI Skill Matching",
+      "type": "openai.chat-completion",
+      "parameters": {
+        "model": "gpt-3.5-turbo",
+        "input": "You are a matching assistant. Match the following freelancer list with the gig description and output the best match in JSON.\n\nFreelancers: {{2.output}}\nGig: {{1.output}}\n\nOutput format:\n{\n  \"best_match\": \"Freelancer Name\",\n  \"match_score\": 0-100,\n  \"reason\": \"Why this freelancer fits\"\n}"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Write Match Result",
+      "type": "google-sheets.add-row",
+      "parameters": {
+        "spreadsheet_id": "YOUR_SPREADSHEET_ID",
+        "sheet_name": "Matches",
+        "values": {
+          "Gig_Title": "{{1.output.title}}",
+          "Best_Freelancer": "{{3.output.best_match}}",
+          "Score": "{{3.output.match_score}}",
+          "Reason": "{{3.output.reason}}"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "google-sheets": {
+      "connection_id": "YOUR_GOOGLE_SHEETS_CONNECTION_ID"
+    },
+    "openai": {
+      "connection_id": "YOUR_OPENAI_CONNECTION_ID"
+    }
+  }
+}
