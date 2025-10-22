@@ -1,0 +1,13 @@
+How to Import and Set It Up
+
+1️⃣ Go to [Make.com → Scenarios → Create New]
+2️⃣ Click Import Blueprint
+3️⃣ Upload the file make_scenario.json
+4️⃣ Connect your:
+
+Google Sheets account (with 3 tabs: Freelancers, Gigs, Matches)
+
+OpenAI account (paste your API key once)
+5️⃣ Replace "YOUR_SPREADSHEET_ID" with your actual Google Sheet ID
+(the long code in your sheet’s URL)
+6️⃣ Click Run Once → add a sample gig to your sheet → watch the automation fill the “Matches” sheet with best match 🎯
