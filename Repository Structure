@@ -1,0 +1,24 @@
+fresherlink/
+│
+├── assets/
+│   ├── logo.png
+│   ├── ui-screenshot1.png
+│   ├── ui-screenshot2.png
+│   └── demo-video.mp4
+│
+├── data/
+│   ├── freelancers_sample.csv
+│   ├── gigs_sample.csv
+│   └── ai_prompt_example.txt
+│
+├── automation/
+│   ├── make_scenario.json
+│   └── zapier_flow.md
+│
+├── docs/
+│   ├── setup_guide.md
+│   ├── glide_app_structure.md
+│   └── ai_connection.md
+│
+├── README.md
+└── LICENSE
