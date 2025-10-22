@@ -1,0 +1,42 @@
+
+---
+
+## 📊 Folder Overview
+
+| Folder | Description |
+|---------|-------------|
+| `/assets` | Logo, screenshots, demo video |
+| `/data` | Example datasets for freelancers & gigs |
+| `/automation` | Make.com & Zapier automations |
+| `/docs` | Setup, Glide structure, API connection |
+| `/` | README + License |
+
+---
+
+## 💡 Future Upgrades
+
+- Add AI resume builder for students  
+- Integrate verified college badges  
+- Add payment system (Razorpay / Stripe)  
+- Leaderboard for top-rated freshers  
+- Internship listing module  
+
+---
+
+## 🔗 Live Demo (Replace this link after publishing)
+👉 [https://fresherlink.glideapp.io](https://fresherlink.glideapp.io)
+
+---
+
+## 📜 License
+MIT License – Free for personal, educational, and open-source use.
+
+---
+
+## ❤️ Contribute
+Want to improve FresherLink?  
+1. Fork this repo  
+2. Make your changes  
+3. Submit a Pull Request  
+
+Built with 💙 by [krishna7671]
