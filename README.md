@@ -30,6 +30,8 @@
 
 ## 🛠️ Setup Guide
 
+For a more detailed walkthrough, please see the [Detailed Setup Guide](docs/detailed_setup.md).
+
 1. **Duplicate the Google Sheet**
    - Open `/data/freelancers_sample.csv` and `/data/gigs_sample.csv`
    - Upload to your Google Drive and convert to Google Sheets
